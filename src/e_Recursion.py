@@ -1,22 +1,25 @@
-def recursion(n):
-
-    if n <= 0:
-        exit(0)
-    else:
+def r1(n):
+    if n > 0:
         print(n)
-        recursion(n - 1)
+        r1(n - 1)
 
     return
 
-def recursion_2(n):
 
+def r2(n):
     ### TODO Add Logic
-    ### 修改recursion()的代码，使得recursion_2(3)的打印结果为1\n 2\n 3
+    ### 修改r1()的代码，使得r2(3)的打印结果为1\n 2\n 3
+    if n > 0:
+        r2(n - 1)
+        print(n)
 
     ###
 
-    return
+    return n
 
 if __name__ == "__main__":
 
-    recursion(3)
+    print("r1 --- ")
+    r1(3)
+    print("r2 --- ")
+    r2(3)

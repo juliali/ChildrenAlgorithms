@@ -22,9 +22,12 @@ def partition(arr, low, high):
     return pi
 
 
-def quick_sort(arr):
-    ### TODO ADD Logic
-
+def quick_sort(arr, low, high):
+    ###TODO
+    p = partition(arr,low,high)
+    if p >= 0:
+        quick_sort(arr, low, p-1)
+        quick_sort(arr, p+1, high)
     ###
     return
 
@@ -32,4 +35,5 @@ def quick_sort(arr):
 if __name__ == "__main__":
 
     arr1 = [6, 2, 1, 3, 7, 9, -2, 0, 8, 12]
-    print(quick_sort(arr1))
+    quick_sort(arr1, 0, len(arr1) - 1)
+    print(arr1)
