@@ -1,4 +1,5 @@
 from countZero import countZero2
+from countZero import countZero
 
 def accumulate(start,end,delta):
     t = 0
@@ -26,7 +27,7 @@ e=100
 d=1
 t=mul(s,e,d)
 print(t)
-n = countZero2(t)
+n = countZero(t)
 print(n)
 
 

@@ -1,9 +1,13 @@
+
+
 def countZero(n):
     m = 10
     num = 0
     while n % m == 0:
+
         num += 1
-        n = n / m
+        n = int(n // m)
+        #print("loop:", n)
 
     return num
 
