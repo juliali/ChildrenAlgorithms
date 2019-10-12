@@ -1,5 +1,5 @@
 from stack import Stack
-from expression import parseInput, compareOperators
+from expression import parseInput, compareOperators,calculate
 
 
 def process_expression(items):
